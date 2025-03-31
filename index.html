@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Hugo 0.66.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/skeleton.css">
+  <link rel="stylesheet" href="../css/custom.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="alternate" href="index.xml" type="application/rss+xml" title="Video Research">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  <title>FrameBridge: </title>
+
+  <style>
+    .custom-table {
+      font-size: 12px; 
+    }
+
+  </style>
+</head>
+
+<body rightmargin="150" leftmargin="150" topmargin="100" bottommargin="100" line-height:160%>
+  <font size="5">
+
+    <div class="container">
+
+      <header role="banner">
+
+      </header>
+          <main role="main">
+            <table class="table custom-table" align="center">
+              <caption>Table 1. Updated VBench-I2V scores. CM means Camera Motion. *: Directly use the score of Table 3 in [1], and compute total score with the code released along with the paper (https://github.com/Vchitect/VBench). The default resolution is 256x256. Note that VBench-I2V is a benchmark suitable for different video resolutions.</caption>
+              <thead>
+                <tr>
+                  <th>Model</th>
+                  <th>Total Score</th>
+                  <th>I2V Score</th>
+                  <th>Quality Score</th>
+                  <th>CM</th>
+                  <th>I2V SC</th>
+                  <th>I2V BC</th>
+                  <th>SC</th>
+                  <th>BC</th>
+                  <th>MS</th>
+                  <th>DD</th>
+                  <th>AQ</th>
+                  <th>IQ</th>
+                  <th>TF</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>DynamiCrafter-256</td>
+                  <td>84.35</td>
+                  <td>91.29</td>
+                  <td style="text-decoration: underline;">77.42</td>
+                  <td>22.18</td>
+                  <td>95.40</td>
+                  <td>96.22</td>
+                  <td>94.60</td>
+                  <td>98.30</td>
+                  <td style="text-decoration: underline;">97.82</td>
+                  <td>38.69</td>
+                  <th>59.40</th>
+                  <td>62.29</td>
+                  <td>97.03</td>
+                </tr>
+                <tr>
+                  <td>SEINE</td>
+                  <td>82.12</td>
+                  <td>88.60</td>
+                  <td>75.64</td>
+                  <td>15.91</td>
+                  <td>93.45</td>
+                  <td>94.21</td>
+                  <td>93.94</td>
+                  <td>97.01</td>
+                  <td>96.20</td>
+                  <td>24.55</td>
+                  <td>56.55</td>
+                  <td style="text-decoration: underline;">70.52</td>
+                  <td>95.07</td>
+                </tr>
+                <tr>
+                  <td>SEINE*</td>
+                  <td>83.49</td>
+                  <td>89.62</td>
+                  <td>77.37</td>
+                  <td>23.36</td>
+                  <td>94.85</td>
+                  <td>94.02</td>
+                  <td>94.20</td>
+                  <td>97.26</td>
+                  <td>96.68</td>
+                  <td>34.31</td>
+                  <td>58.42</td>
+                  <th>70.97</th>
+                  <td>96.72</td>
+                </tr>
+                <tr>
+                  <td>SparseCtrl</td>
+                  <td>80.34</td>
+                  <td>85.13</td>
+                  <td>75.54</td>
+                  <td>25.82</td>
+                  <td>88.39</td>
+                  <td>92.46</td>
+                  <td>85.08</td>
+                  <td>93.81</td>
+                  <td>94.25</td>
+                  <th>81.95</th>
+                  <td>49.88</td>
+                  <td>69.35</td>
+                  <td>91.78</td>
+                </tr>
+                <tr>
+                  <td>ConsistI2V*</td>
+                  <td>83.30</td>
+                  <td>90.38</td>
+                  <td>76.22</td>
+                  <td style="text-decoration: underline;">33.60</td>
+                  <td>94.69</td>
+                  <td>94.57</td>
+                  <th>95.27</th>
+                  <td>98.28</td>
+                  <td>97.38</td>
+                  <td>18.62</td>
+                  <td>59.00</td>
+                  <td>66.92</td>
+                  <td style="text-decoration: underline;">97.56</td>
+                </tr>
+                <tr>
+                  <td>FrameBridge-VideoCrafter</td>
+                  <td style="text-decoration: underline;">85.37</td>
+                  <td style="text-decoration: underline;">92.83</td>
+                  <th>77.92</th>
+                  <td>30.72</td>
+                  <th>96.24</th>
+                  <th>97.25</th>
+                  <td style="text-decoration: underline;">94.63</td>
+                  <th>98.92</th>
+                  <th>98.51</th>
+                  <td>35.77</td>
+                  <td style="text-decoration: underline;">59.38</td>
+                  <td>63.28</td>
+                  <th>98.01</th>
+                </tr>
+                <tr>
+                  <td>FrameBridge-CogVideoX</td>
+                  <th>85.93</th>
+                  <th>95.22</th>
+                  <td>76.65</td>
+                  <th>92.06</th>
+                  <td style="text-decoration: underline;">95.42</td>
+                  <td style="text-decoration: underline;">97.13</td>
+                  <td>93.60</td>
+                  <td style="text-decoration: underline;">98.62</td>
+                  <td>97.57</td>
+                  <td style="text-decoration: underline;">48.29</td>
+                  <td>54.28</td>
+                  <td>60.00</td>
+                  <td>96.61</td>
+                </tr>
+              </tbody>
+            </table>
+
+        
+
+            <table class="table" align="center">
+              <caption>Table 2. Dynamic Degree score evaluated with VBench-I2V. The two techniques used in diffusion I2V models can also improve the dynamic degree of FrameBridge.FrameStride: Add frame-stride condition. NoisyCondition: Add noise to image condition.</caption>
+              <thead>
+                  <tr>
+                      <th>Model</th>
+                      <th>DD</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>DynamiCrafter-256</td>
+                      <td>38.69</td>
+                  </tr>
+                  <tr>
+                      <td>FrameBridge-VideoCrafter</td>
+                      <td>35.77</td>
+                  </tr>
+                  <tr>
+                      <td>FrameBridge-VideoCrafter-FrameStride</td>
+                      <td>46.26</td>
+                  </tr>
+                  <tr>
+                      <td>FrameBridge-VideoCrafter-NoisyCondition</td>
+                      <th>48.62</th>
+                  </tr>
+              </tbody>
+            </table>
+
+            <table class="table" align="center" style="table-layout: fixed; word-break: break-word">
+              <caption>Table 3. Ablation study of fine-tuning from VideoCrafter.</caption>
+              <thead>
+                <tr>
+                  <th>Model</th>
+                  <th>Base Model</th>
+                  <th>FVD</th>
+                  <th>CLIPSIM</th>
+                  <th>PIC</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Diffusion (i.e., DynamiCrafter)</td>
+                  <td>VideoCrafter</td>
+                  <td>192</td>
+                  <td>0.2245</td>
+                  <td>0.6131</td>
+                </tr>
+                <tr>
+                  <td>FrameBridge w.o.SAF</td>
+                  <td>VideoCrafter</td>
+                  <td>299</td>
+                  <td>0.2246</td>
+                  <td>0.5559</td>
+                </tr>
+                <tr>
+                  <td>FrameBridge w.SAF</td>
+                  <td>VideoCrafter</td>
+                  <td><b>99</b></td>
+                  <td><b>0.2250</b></td>
+                  <td><b>0.6963</b></td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <table class="table" align="center" style="table-layout: fixed; word-break: break-word">
+              <caption>Table 4. Ablation study of fine-tuning from CogVideoX</caption>
+              <thead>
+                <tr>
+                  <th>Model</th>
+                  <th>Base Model</th>
+                  <th>FVD</th>
+                  <th>CLIPSIM</th>
+                  <th>PIC</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Diffusion (i.e., DynamiCrafter)</td>
+                  <td>CogVideoX</td>
+                  <td>118</td>
+                  <td><b>0.2250</b></td>
+                  <td>0.7659</td>
+                </tr>
+                <tr>
+                  <td>FrameBridge w.o.SAF</td>
+                  <td>CogVideoX</td>
+                  <td>178</td>
+                  <td><b>0.2250</b></td>
+                  <td>0.7104</td>
+                </tr>
+                <tr>
+                  <td>FrameBridge w.SAF</td>
+                  <td>CogVideoX</td>
+                  <td><b>107</b></td>
+                  <td><b>0.2250</b></td>
+                  <td><b>0.7731</b></td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <table class="table" align="center" style="table-layout: fixed; word-break: break-word;">
+              <thead>
+                <caption>Table 5. Zero-shot MSR-VTT results and VBench-I2V total score with 24 frames.</caption>
+                <tr>
+                  <th>Model</th>
+                  <th>FVD &darr;</th>
+                  <th>CLIPSIM &uarr;</th>
+                  <th>PIC &uarr;</th>
+                  <th>VBench-I2V Total Score &uarr;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Diffusion</td>
+                  <td>171.25</td>
+                  <td><b>0.2251</b></td>
+                  <td>0.7231</td>
+                  <td>82.98</td>
+                </tr>
+                <tr>
+                  <td>FrameBridge</td>
+                  <td><b>147.73</b></td>
+                  <td><b>0.2251</b></td>
+                  <td><b>0.7586</b></td>
+                  <td><b>84.01</b></td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <figure>
+              
+              <img src="demo\curves\CD-FVD.png" width="500"/>
+              <figcaption>Figure 1. CD-FVD curves of DynamiCrafter and FrameBridge.</figcaption>
+            </figure>
+
+            <table class="table" align="center" style="table-layout: fixed;word-break:break-word">
+              <caption>Table 6. Videos generated with VBench-I2V prompts. (1) The high Dynamic Degree (DD) score of SparseCtrl may come at the cost of temporal consistency, which may potentially degrade the quality
+                of videos as reflected by the VBench-I2V total score. All the videos are displayed with the original resolution generated by the model (i.e. 256 x 384 for SparseCtrl and 256 x 256 for other models).
+                The calculation of VBench-I2V score is fair as it is a benchmark suitable for different video resolutions.
+                 (2) Compared with two diffusion baselines DynamiCrafter (DD=38.69) and ConsistI2V (DD=18.62), the dynamic degree of videos generated by FrameBridge-CogVideoX (DD=48.29)
+                is not lower.
+              </caption>
+              <thead>
+                <tr>
+                  <td scope="col" width="20%">
+                    <font color="061E61">Static Image:</font>
+                  </td>
+                  <td colspan="3" width="60%">
+                    <font color="061E61">Text Condition:</font>
+                  </td>
+                </tr>
+              </thead>
+              <thead>
+                <tr>
+                  <td scope="col" width="20%">
+                    <img src="demo/VBench-I2V Score/condition/bridge.jpg" width="250">
+                  </td>
+                  <td colspan="3" width="60%">
+                    <font color="061E61"><i>a bridge that is in the middle of a river, camera zooms out</i></font>
+                  </td>
+                </tr>
+              </thead>
+              <thead>
+                <tr>
+                  <td scope="col" width="20%">
+                    <font color="061E61">FrameBridge-CogVideoX (DD=48.29, Total Score=85.93):</font>
+                  </td>
+                  <td scope="col" width="20%">
+                    <font color="061E61">DynamiCrafter (DD=38.69, Total Score=84.35):</font>
+                  </td>
+                  <td scope="col" width="20%">
+                    <font color="061E61">ConsistI2V (DD=18.62, Total Score=83.30):</font>
+                  </td>
+                </tr>
+              </thead>
+              <thead>
+                <tr>
+                  <td scope="col" width="20%">
+                    <video width="250" controls>
+                      <source src="demo/VBench-I2V Score/FrameBridge-CogVideoX/bridge.mp4" type="video/mp4">
+                      Your browser does not support HTML video.
+                    </video>
+                  </td>
+                  <td scope="col" width="20%">
+                    <video width="250" controls>
+                      <source src="demo/VBench-I2V Score/DynamiCrafter/bridge.mp4" type="video/mp4">
+                      Your browser does not support HTML video.
+                    </video>
+                  </td>
+                  <td scope="col" width="20%">
+                    <video width="250" controls>
+                      <source src="demo/VBench-I2V Score/ConsistI2V/bridge.mp4" type="video/mp4">
+                      Your browser does not support HTML video.
+                    </video>
+                  </td>
+                </tr>
+              </thead>
+              <thead>
+                <td scope="col" width="30%">
+                  <font color="061E61">SparseCtrl (DD=81.95, Total Score=80.34):</font>
+                </td>
+              </thead>
+              <thea>
+                <tr>
+                  <td scope="col" width="30%">
+                    <video width="375" controls>
+                      <source src="demo/VBench-I2V Score/SparseCtrl/bridge.mp4" type="video/mp4">
+                      Your browser does not support HTML video.
+                    </video>
+                  </td>
+                </tr>
+              </thead>
+            </table>
+
+            <table class="table" align="center" style="table-layout: fixed;word-break:break-word">
+              <caption>
+                Table 7. Our experiments on FrameBridge-VideoCrafter demonstrate that FrameBridge can also leverage techniques used in diffusion I2V models to improve dynamic degree.
+              </caption>
+              <thead>
+                <tr>
+                  <td scope="col" width="20%">
+                    <font color="061E61">Static Image:</font>
+                  </td>
+                  <td colspan="3" width="60%">
+                    <font color="061E61">Text Condition:</font>
+                  </td>
+                </tr>
+              </thead>
+              <thead>
+                <tr>
+                  <td scope="col" width="20%">
+                    <img src="demo/Motion-Improved FrameBridge/condition/leave.jpg" width="250">
+                  </td>
+                  <td colspan="3" width="60%">
+                    <font color="061E61"><i>leaves blown off by the wind</i></font>
+                  </td>
+                </tr>
+              </thead>
+              <thead>
+                <tr>
+                  <td scope="col" width="20%">
+                    <font color="061E61">FrameBridge-VideoCrafter:</font>
+                  </td>
+                  <td scope="col" width="20%">
+                    <font color="061E61">DynamiCrafter:</font>
+                  </td>
+                  <td scope="col" width="20%">
+                    <font color="061E61">FrameBridge-VideoCrafter-MI:</font>
+                  </td>
+                </tr>
+              </thead>
+              <thead>
+                <tr>
+                  <td scope="col" width="20%">
+                    <video width="250" controls>
+                      <source src="demo/Motion-Improved FrameBridge/FrameBridge/leave.mp4" type="video/mp4">
+                      Your browser does not support HTML video.
+                    </video>
+                  </td>
+                  <td scope="col" width="20%">
+                    <video width="250" controls>
+                      <source src="demo/Motion-Improved FrameBridge/DynamiCrafter/leave.mp4" type="video/mp4">
+                      Your browser does not support HTML video.
+                    </video>
+                  </td>
+                  <td scope="col" width="20%">
+                    <video width="250" controls>
+                      <source src="demo/Motion-Improved FrameBridge/FrameBridge_MI/leave.mp4" type="video/mp4">
+                      Your browser does not support HTML video.
+                    </video>
+                  </td>
+                </tr>
+              </thead>
+            </table>
+
+            <table class="table" align="center" style="table-layout: fixed;word-break:break-word">
+              <caption>
+                Table 8. Our experiments on FrameBridge-VideoCrafter demonstrate that FrameBridge can also leverage techniques used in diffusion I2V models to improve dynamic degree.
+              </caption>
+              <thead>
+                <tr>
+                  <td scope="col" width="20%">
+                    <font color="061E61">Static Image:</font>
+                  </td>
+                  <td colspan="3" width="60%">
+                    <font color="061E61">Text Condition:</font>
+                  </td>
+                </tr>
+              </thead>
+              <thead>
+                <tr>
+                  <td scope="col" width="20%">
+                    <img src="demo/Motion-Improved FrameBridge/condition/car.jpg" width="250">
+                  </td>
+                  <td colspan="3" width="60%">
+                    <font color="061E61"><i>a blue car driving down a dirt road near train tracks</i></font>
+                  </td>
+                </tr>
+              </thead>
+              <thead>
+                <tr>
+                  <td scope="col" width="20%">
+                    <font color="061E61">FrameBridge-VideoCrafter:</font>
+                  </td>
+                  <td scope="col" width="20%">
+                    <font color="061E61">DynamiCrafter:</font>
+                  </td>
+                  <td scope="col" width="20%">
+                    <font color="061E61">FrameBridge-VideoCrafter-MI:</font>
+                  </td>
+                </tr>
+              </thead>
+              <thead>
+                <tr>
+                  <td scope="col" width="20%">
+                    <video width="250" controls>
+                      <source src="demo/Motion-Improved FrameBridge/FrameBridge/car.mp4" type="video/mp4">
+                      Your browser does not support HTML video.
+                    </video>
+                  </td>
+                  <td scope="col" width="20%">
+                    <video width="250" controls>
+                      <source src="demo/Motion-Improved FrameBridge/DynamiCrafter/car.mp4" type="video/mp4">
+                      Your browser does not support HTML video.
+                    </video>
+                  </td>
+                  <td scope="col" width="20%">
+                    <video width="250" controls>
+                      <source src="demo/Motion-Improved FrameBridge/FrameBridge_MI/car.mp4" type="video/mp4">
+                      Your browser does not support HTML video.
+                    </video>
+                  </td>
+                </tr>
+              </thead>
+            </table>
+
+            <table class="table" align="center" style="table-layout: fixed;word-break:break-word">
+              <thead>
+                <caption>
+                  Table 9. More samples generated by FrameBridge.
+                </caption>
+                <tr>
+                  <td colspan="2" width="40%">
+                    <font color="061E61">Sample 1: "camera zoom-in, close look at the apple"</font>
+                  </td>
+                  <td colspan="2" width="40%">
+                    <font color="061E61">Sample 2: "fireworks in the night sky over a city"</font>
+                  </td>
+                </tr>
+              </thead>
+              <thead>
+                <tr>
+                  <td scope="col" width="20%">
+                    <font color="061E61">Condition Image:</font>
+                  </td>
+                  <td scope="col" width="20%">
+                    <font color="061E61">I2V Result:</font>
+                  </td>
+                  <td scope="col" width="20%">
+                    <font color="061E61">Condition Image:</font>
+                  </td>
+                  <td scope="col" width="20%">
+                    <font color="061E61">I2V Result:</font>
+                  </td>
+                </tr>
+              </thead>
+              <thead>
+                <tr>
+                  <td scope="col" width="20%">
+                    <img src="demo/FrameBridge with larger motion/condition/apple.jpg" width="250">
+                  </td>
+                  <td scope="col" width="20%">
+                    <video width="250" controls>
+                      <source src="demo/FrameBridge with larger motion/FrameBridge/apple.mp4" type="video/mp4">
+                      Your browser does not support HTML video.
+                    </video>
+                  </td>
+                  <td scope="col" width="20%">
+                    <img src="demo/FrameBridge with larger motion/condition/firework.jpg" width="250">
+                  </td>
+                  <td scope="col" width="20%">
+                    <video width="250" controls>
+                      <source src="demo/FrameBridge with larger motion/FrameBridge/firework.mp4" type="video/mp4">
+                      Your browser does not support HTML video.
+                    </video>
+                  </td>
+                </tr>
+              </thead>
+            </table>
+
+            <table class="table" align="center" style="table-layout: fixed;word-break:break-word">
+              <thead>
+                <caption>
+                  Table 10. More samples generated by FrameBridge.
+                </caption>
+                <tr>
+                  <td colspan="2" width="40%">
+                    <font color="061E61">Sample 3: "bird flying off the tree"</font>
+                  </td>
+                  <td colspan="2" width="40%">
+                    <font color="061E61">Sample 4: "a castle on top of a hill covered in snow, camera pans left"</font>
+                  </td>
+                </tr>
+              </thead>
+              <thead>
+                <tr>
+                  <td scope="col" width="20%">
+                    <font color="061E61">Condition Image:</font>
+                  </td>
+                  <td scope="col" width="20%">
+                    <font color="061E61">I2V Result:</font>
+                  </td>
+                  <td scope="col" width="20%">
+                    <font color="061E61">Condition Image:</font>
+                  </td>
+                  <td scope="col" width="20%">
+                    <font color="061E61">I2V Result:</font>
+                  </td>
+                </tr>
+              </thead>
+              <thead>
+                <tr>
+                  <td scope="col" width="20%">
+                    <img src="demo/FrameBridge with larger motion/condition/bird.jpg" width="250">
+                  </td>
+                  <td scope="col" width="20%">
+                    <video width="250" controls>
+                      <source src="demo/FrameBridge with larger motion/FrameBridge/bird.mp4" type="video/mp4">
+                      Your browser does not support HTML video.
+                    </video>
+                  </td>
+                  <td scope="col" width="20%">
+                    <img src="demo/FrameBridge with larger motion/condition/castle.jpg" width="250">
+                  </td>
+                  <td scope="col" width="20%">
+                    <video width="250" controls>
+                      <source src="demo/FrameBridge with larger motion/FrameBridge/castle.mp4" type="video/mp4">
+                      Your browser does not support HTML video.
+                    </video>
+                  </td>
+                </tr>
+              </thead>
+            </table>
+
+            <table class="table" align="center" style="table-layout: fixed;word-break:break-word">
+              <caption>
+                Table 11. More samples generated by FrameBridge.
+              </caption>
+              <thead>
+                <tr>
+                  <td colspan="2" width="40%">
+                    <font color="061E61">Sample 5: "the table is rotating"</font>
+                  </td>
+                  <td colspan="2" width="40%">
+                    <font color="061E61">Sample 6: "a great white shark swimming in the ocean"</font>
+                  </td>
+                </tr>
+              </thead>
+              <thead>
+                <tr>
+                  <td scope="col" width="20%">
+                    <font color="061E61">Condition Image:</font>
+                  </td>
+                  <td scope="col" width="20%">
+                    <font color="061E61">I2V Result:</font>
+                  </td>
+                  <td scope="col" width="20%">
+                    <font color="061E61">Condition Image:</font>
+                  </td>
+                  <td scope="col" width="20%">
+                    <font color="061E61">I2V Result:</font>
+                  </td>
+                </tr>
+              </thead>
+              <thead>
+                <tr>
+                  <td scope="col" width="20%">
+                    <img src="demo/FrameBridge with larger motion/condition/cake.jpg" width="250">
+                  </td>
+                  <td scope="col" width="20%">
+                    <video width="250" controls>
+                      <source src="demo/FrameBridge with larger motion/FrameBridge/cake.mp4" type="video/mp4">
+                      Your browser does not support HTML video.
+                    </video>
+                  </td>
+                  <td scope="col" width="20%">
+                    <img src="demo/FrameBridge with larger motion/condition/shark.jpg" width="250">
+                  </td>
+                  <td scope="col" width="20%">
+                    <video width="250" controls>
+                      <source src="demo/FrameBridge with larger motion/FrameBridge/shark.mp4" type="video/mp4">
+                      Your browser does not support HTML video.
+                    </video>
+                  </td>
+                </tr>
+              </thead>
+            </table>
+
+          </section>
+        </article>
+      </main>
+
+    </div>
+
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-139981676-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+    <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+         HTML: ["input/TeX","output/HTML-CSS"],
+         TeX: {
+                Macros: {
+                         bm: ["\\boldsymbol{#1}", 1],
+                         argmax: ["\\mathop{\\rm arg\\,max}\\limits"],
+                         argmin: ["\\mathop{\\rm arg\\,min}\\limits"]},
+                extensions: ["AMSmath.js","AMSsymbols.js"],
+                equationNumbers: { autoNumber: "AMS" } },
+         extensions: ["tex2jax.js"],
+         jax: ["input/TeX","output/HTML-CSS"],
+         tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                    processEscapes: true },
+         "HTML-CSS": { availableFonts: ["TeX"],
+                       linebreaks: { automatic: true } }
+     });
+ </script>
+
+    <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+       tex2jax: {
+         skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+       }
+     });
+ </script>
+
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+
+
+
+</body>
+
+</html>
